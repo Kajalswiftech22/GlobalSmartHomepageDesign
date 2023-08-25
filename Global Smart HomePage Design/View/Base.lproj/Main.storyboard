@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eGv-t2-xEG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Tr-aJ-6je">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -313,8 +313,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G0r-CM-AqQ">
                                         <rect key="frame" x="8" y="8" width="345" height="20"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line graph" translatesAutoresizingMaskIntoConstraints="NO" id="aWo-9e-JhL">
-                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart.line.uptrend.xyaxis" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aWo-9e-JhL">
+                                                <rect key="frame" x="0.0" y="1.3333333333333321" width="20" height="17.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="7yx-x7-S5g"/>
                                                     <constraint firstAttribute="width" constant="20" id="FRS-D0-lrS"/>
@@ -439,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2906.1068702290077" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="3832.8244274809158" y="-34.507042253521128"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="Pvh-X5-aV5">
@@ -453,25 +453,25 @@
                     </tabBar>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="3626.7175572519081" y="-37.323943661971832"/>
+            <point key="canvasLocation" x="4553.4351145038163" y="-37.323943661971832"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="d9T-gQ-3Vt">
+        <scene sceneID="IpR-2F-3Qu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eGv-t2-xEG" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Tr-aJ-6je" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Zr-Yo-6r3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Yk-j7-FtH">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UEO-9C-DUw"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jfw-5w-cAI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hHi-ot-xV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkP-I2-qbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1979.3893129770991" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="2906.1068702290077" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
@@ -479,8 +479,8 @@
         <image name="arrowtriangle.down.circle.fill" catalog="system" width="128" height="123"/>
         <image name="arrowtriangle.forward" catalog="system" width="128" height="113"/>
         <image name="background" width="626" height="419"/>
+        <image name="chart.line.uptrend.xyaxis" catalog="system" width="128" height="102"/>
         <image name="eye.fill" catalog="system" width="128" height="80"/>
-        <image name="line graph" width="225" height="225"/>
         <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

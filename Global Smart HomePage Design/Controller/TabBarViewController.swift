@@ -12,6 +12,9 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpTabs()
+        self.configureNavigationBar()
+     
+
     }
     
     private func setUpTabs() {
@@ -34,4 +37,33 @@ class TabBarViewController: UITabBarController {
         
         self.viewControllers = [home, card, history, profile]
     }
+    
+     private func  configureNavigationBar() {
+
+         self.navigationController?.navigationBar.tintColor = .gray
+         let bellButton = UIBarButtonItem(image: UIImage(systemName: "bell.fill"),
+                                                             style: .done,
+                                                             target: self,
+                                                             action: nil)
+         let heartButton = UIBarButtonItem(image: UIImage(systemName: "heart.fill"),
+                                                                  style: .done,
+                                                                  target: self,
+                                                                  action: nil)
+         let searchButton = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"),
+                                                                  style: .done,
+                                                                  target: self,
+                                                                  action: nil)
+         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "global"),
+                                                            style: .done,
+                                                            target: self,
+                                                            action: nil)
+         navigationItem.leftBarButtonItem?.tintColor = .blue
+         navigationItem.leftBarButtonItem?.imageInsets = UIEdgeInsets(top: 0, left: -30, bottom: 0, right: 0)
+         
+         bellButton.imageInsets = UIEdgeInsets(top: 0.0, left: 0, bottom: 0, right: 0)
+         heartButton.imageInsets = UIEdgeInsets(top: 0.0, left: 15, bottom: 0, right: -20)
+         searchButton.imageInsets = UIEdgeInsets(top: 0.0, left: 60, bottom: 0, right: 0)
+
+         navigationItem.rightBarButtonItems = [bellButton, heartButton, searchButton]
+     }
 }
