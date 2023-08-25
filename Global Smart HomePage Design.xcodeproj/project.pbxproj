@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC1FFA492A98A4B40086721F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA482A98A4B40086721F /* TabBarViewController.swift */; };
+		99614A712A98E8A80080B09F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614A702A98E8A80080B09F /* TabBarViewController.swift */; };
 		EC1FFA4B2A98A5C70086721F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */; };
 		EC1FFA4D2A98A5E00086721F /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4C2A98A5E00086721F /* CardViewController.swift */; };
 		EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */; };
 		EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA502A98A6110086721F /* ProfileViewController.swift */; };
-		EC1FFA532A98A92F0086721F /* Tab Bar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1FFA522A98A92F0086721F /* Tab Bar.storyboard */; };
+		EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1FFA522A98A92F0086721F /* TabBar.storyboard */; };
 		EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B9492A973FF1007052B5 /* AppDelegate.swift */; };
 		EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */; };
 		EC86B94E2A973FF1007052B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B94D2A973FF1007052B5 /* ViewController.swift */; };
@@ -22,12 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EC1FFA482A98A4B40086721F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		99614A702A98E8A80080B09F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC1FFA4C2A98A5E00086721F /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		EC1FFA502A98A6110086721F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		EC1FFA522A98A92F0086721F /* Tab Bar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Tab Bar.storyboard"; sourceTree = "<group>"; };
+		EC1FFA522A98A92F0086721F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		EC86B9462A973FF1007052B5 /* Global Smart HomePage Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Smart HomePage Design.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC86B9492A973FF1007052B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +49,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99614A6D2A98DA1B0080B09F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99614A6E2A98DA260080B09F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC86B94F2A973FF1007052B5 /* Main.storyboard */,
+				EC1FFA522A98A92F0086721F /* TabBar.storyboard */,
+				EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99614A6F2A98DA310080B09F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC86B94D2A973FF1007052B5 /* ViewController.swift */,
+				99614A702A98E8A80080B09F /* TabBarViewController.swift */,
+				EC1FFA502A98A6110086721F /* ProfileViewController.swift */,
+				EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */,
+				EC1FFA4C2A98A5E00086721F /* CardViewController.swift */,
+				EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EC86B93D2A973FF1007052B5 = {
 			isa = PBXGroup;
 			children = (
@@ -68,18 +98,12 @@
 		EC86B9482A973FF1007052B5 /* Global Smart HomePage Design */ = {
 			isa = PBXGroup;
 			children = (
+				99614A6D2A98DA1B0080B09F /* Model */,
+				99614A6E2A98DA260080B09F /* View */,
+				99614A6F2A98DA310080B09F /* Controller */,
 				EC86B9492A973FF1007052B5 /* AppDelegate.swift */,
 				EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */,
-				EC86B94D2A973FF1007052B5 /* ViewController.swift */,
-				EC1FFA482A98A4B40086721F /* TabBarViewController.swift */,
-				EC1FFA502A98A6110086721F /* ProfileViewController.swift */,
-				EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */,
-				EC1FFA4C2A98A5E00086721F /* CardViewController.swift */,
-				EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */,
-				EC86B94F2A973FF1007052B5 /* Main.storyboard */,
-				EC1FFA522A98A92F0086721F /* Tab Bar.storyboard */,
 				EC86B9522A973FF2007052B5 /* Assets.xcassets */,
-				EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */,
 				EC86B9572A973FF2007052B5 /* Info.plist */,
 			);
 			path = "Global Smart HomePage Design";
@@ -144,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC86B9562A973FF2007052B5 /* LaunchScreen.storyboard in Resources */,
-				EC1FFA532A98A92F0086721F /* Tab Bar.storyboard in Resources */,
+				EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */,
 				EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */,
 				EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */,
 			);
@@ -157,8 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99614A712A98E8A80080B09F /* TabBarViewController.swift in Sources */,
 				EC1FFA4B2A98A5C70086721F /* HomeViewController.swift in Sources */,
-				EC1FFA492A98A4B40086721F /* TabBarViewController.swift in Sources */,
 				EC1FFA4D2A98A5E00086721F /* CardViewController.swift in Sources */,
 				EC86B94E2A973FF1007052B5 /* ViewController.swift in Sources */,
 				EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */,
