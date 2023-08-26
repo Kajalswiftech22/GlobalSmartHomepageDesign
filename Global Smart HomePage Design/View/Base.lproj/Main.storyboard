@@ -429,13 +429,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GlobalSmart+" id="Te3-iI-aTh"/>
-                    <connections>
-                        <outlet property="fundTransferView" destination="o68-xF-7k1" id="okU-ZP-OEH"/>
-                        <outlet property="interestView" destination="vjy-PA-uzL" id="xUn-Ud-rsb"/>
-                        <outlet property="thirtyDaysTransaction" destination="BBM-N2-OhI" id="Fwv-2b-yg1"/>
-                        <outlet property="threeDot" destination="Kk9-MN-yV7" id="yXe-iv-HOU"/>
-                        <outlet property="viewStatement" destination="Fpi-Cn-bza" id="WSw-qK-trT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

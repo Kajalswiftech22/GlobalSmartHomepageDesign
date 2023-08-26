@@ -8,32 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var threeDot: UIView!{
-        didSet{
-            threeDot.layer.cornerRadius = 8
-        }
-    }
-    @IBOutlet weak var interestView: UIView!{
-        didSet{
-            interestView.layer.cornerRadius = 6
-        }
-    }
-    @IBOutlet weak var fundTransferView: UIView!{
-        didSet{
-            fundTransferView.layer.cornerRadius = 8
-        }
-    }
-    @IBOutlet weak var viewStatement: UIView!{
-        didSet{
-            viewStatement.layer.cornerRadius = 8
-        }
-    }
-    @IBOutlet weak var thirtyDaysTransaction: UIView!{
-        didSet{
-            thirtyDaysTransaction.layer.cornerRadius = 6
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
