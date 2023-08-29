@@ -7,107 +7,69 @@
 
 import UIKit
 
+struct IconLabelModel {
+    var image: String = ""
+    var title: String = ""
+    var color: UIColor = .clear
+}
+
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var interest: UIView!{
-        didSet{
-            interest.layer.cornerRadius = 4
-        }
-    }
+    @IBOutlet weak var interest: UIView!
+    @IBOutlet weak var fundTransferView: UIView!
+    @IBOutlet weak var viewStatement: UIView!
+    @IBOutlet weak var threeDotView: UIView!
+    @IBOutlet weak var lastDaysTransaction: UIView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBOutlet weak var fundTransferView: UIView!{
-        didSet{
-            fundTransferView.layer.cornerRadius = 6
-        }
-    }
     
-    @IBOutlet weak var viewStatement: UIView!{
-        didSet{
-            viewStatement.layer.cornerRadius = 6
-        }
-    }
     
-    @IBOutlet weak var threeDotView: UIView!{
-        didSet{
-            threeDotView.layer.cornerRadius = 6
-        }
-    }
-    
-    @IBOutlet weak var lastDaysTransaction: UIView!{
-        didSet{
-            lastDaysTransaction.layer.cornerRadius = 8
-        }
-    }
-    @IBOutlet weak var qrView: UIView!{
-        didSet{
-            qrView.layer.cornerRadius = qrView.frame.height/2
-        }
-    }
-    
-    @IBOutlet weak var collectionViewOutlet: UIView!
-    
-    //Change the color of each cell
-    let cellColors: [UIColor] = [
-        .orange,
-        .systemMint,
-        .systemGray5,
-        .systemGray5,
-        .systemMint,
-        .systemCyan,
-        .systemGray5,
-        .systemCyan
+    let iconLabelList: [IconLabelModel] = [
+        IconLabelModel(image: "menubar.dock.rectangle.badge.record", title: "Load to", color: .orange),
+        IconLabelModel(image: "creditcard.fill", title: "Merchant", color: .systemMint),
+        IconLabelModel(image: "iphone", title: "TopUp", color: .systemGray5),
+        IconLabelModel(image: "iphone.gen2.radiowaves.left.and.right", title: "Data", color: .systemGray5),
+        IconLabelModel(image: "wifi", title: "ISP", color: .systemMint),
+        IconLabelModel(image: "creditcard.circle", title: "Credit Card", color: .systemCyan),
+        IconLabelModel(image: "car.rear.waves.up.fill", title: "EMI", color: .systemGray5),
+        IconLabelModel(image: "beach.umbrella.fill", title: "Insurance", color: .systemCyan)
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 60
-        layout.minimumInteritemSpacing = 20
-        layout.itemSize = CGSize(width: 60, height: 60)
-        layout.sectionInset = UIEdgeInsets(top: 400, left: 40, bottom: 0, right: 40)
-
-        // Create the collection view using the layout
-        let collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        
+        //Set the corner radius
+        lastDaysTransaction.layer.cornerRadius = 8
+        threeDotView.layer.cornerRadius = 6
+        viewStatement.layer.cornerRadius = 6
+        fundTransferView.layer.cornerRadius = 6
+        interest.layer.cornerRadius = 4
+        
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.backgroundColor = .clear
-
-        collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: MyCollectionViewCell.identifier)
-        view.addSubview(collectionView)
+        collectionView.backgroundColor = .white
+        
+        collectionView.register(UINib(nibName: "iconsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "iconsCollectionViewCell")
+        
     }
 }
     
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
-        
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 8
+            return iconLabelList.count
         }
         
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCollectionViewCell.identifier, for: indexPath) as! MyCollectionViewCell
-
-            let colorIndex = indexPath.item % cellColors.count
-            cell.backgroundColor = cellColors[colorIndex]
-            
-            let images = [
-                       UIImage(systemName: "menubar.dock.rectangle.badge.record"),
-                       UIImage(systemName: "creditcard.fill"),
-                       UIImage(systemName: "iphone"),
-                       UIImage(systemName: "iphone.gen2.radiowaves.left.and.right"),
-                       UIImage(systemName: "wifi"),
-                       UIImage(systemName: "creditcard.circle"),
-                       UIImage(systemName: "car.rear.waves.up.fill"),
-                       UIImage(systemName: "beach.umbrella.fill")
-                   ].compactMap({ $0 })
-                   
-                   if indexPath.item < images.count {
-                       cell.configure(with: images[indexPath.item])
-                   } else {
-                       cell.configure(with: nil) // Handle if there are more cells than images
-                   }
-            
-            return cell
-        }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "iconsCollectionViewCell", for: indexPath) as! CollectionViewCell
         
+        cell.configure(model: iconLabelList[indexPath.row])
+        return cell
     }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 10, height: 10)
+    }
+
+   
+}
 

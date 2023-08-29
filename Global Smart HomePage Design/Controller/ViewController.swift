@@ -19,7 +19,5 @@ class ViewController: UIViewController {
         self.present(navVC, animated: false)
         
     }
-
-
 }
 

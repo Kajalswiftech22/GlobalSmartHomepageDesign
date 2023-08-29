@@ -14,6 +14,8 @@
 		EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */; };
 		EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA502A98A6110086721F /* ProfileViewController.swift */; };
 		EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1FFA522A98A92F0086721F /* TabBar.storyboard */; };
+		EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */; };
+		EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC829E782A9DE225005A498A /* CollectionViewCell.swift */; };
 		EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B9492A973FF1007052B5 /* AppDelegate.swift */; };
 		EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */; };
 		EC86B94E2A973FF1007052B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B94D2A973FF1007052B5 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		EC1FFA502A98A6110086721F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC1FFA522A98A92F0086721F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconsCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC829E782A9DE225005A498A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EC86B9462A973FF1007052B5 /* Global Smart HomePage Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Smart HomePage Design.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC86B9492A973FF1007052B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				EC86B94F2A973FF1007052B5 /* Main.storyboard */,
 				EC1FFA522A98A92F0086721F /* TabBar.storyboard */,
 				EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */,
+				EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */,
+				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 				EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */,
 				EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */,
 				EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */,
+				EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +200,7 @@
 				EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */,
 				EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */,
 				EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */,
+				EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

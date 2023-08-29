@@ -13,40 +13,17 @@ class MyCollectionViewCell: UICollectionViewCell {
     
    private let imageView: UIImageView = {
         let imageView = UIImageView()
-       imageView.contentMode = .scaleAspectFit
         return imageView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(imageView)
-        commonInit()
-//        
-//        let images = [
-//            UIImage(systemName: "menubar.dock.rectangle.badge.record"),
-//            UIImage(systemName: "creditcard.fill"),
-//            UIImage(systemName: "iphone"),
-//            UIImage(systemName: "iphone.gen2.radiowaves.left.and.right"),
-//            UIImage(systemName: "wifi"),
-//            UIImage(systemName: "creditcard.circle"),
-//            UIImage(systemName: "car.rear.waves.up.fill"),
-//            UIImage(systemName: "beach.umbrella.fill")
-//          
-//        ].compactMap({ $0 })
-//        imageView.image = images.randomElement()
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private func commonInit() {
-//           contentView.frame.size.width = contentView.frame.height
-           
-           // Make the cell circular
-//           contentView.layer.cornerRadius = contentView.frame.width / 1
-//           contentView.clipsToBounds = true
-       }
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -58,14 +35,13 @@ class MyCollectionViewCell: UICollectionViewCell {
         let yOffset = (contentView.bounds.height - imageViewSize.height) / 2
         imageView.frame = CGRect(x: xOffset, y: yOffset, width: imageViewSize.width, height: imageViewSize.height)
     }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        imageView.image = nil
-    }
-    func configure(with image: UIImage?) {
-        imageView.image = image
-        imageView.tintColor = .white
-        imageView.contentMode = .scaleAspectFit
-      }
+
+//    func configure(with model: IconLabelModel?) {
+//        imageView.tintColor = .red
+//        imageView.backgroundColor = .gray
+//        imageView.contentMode = .scaleAspectFit
+//        imageView.clipsToBounds = true
+//        imageView.layer.cornerRadius = 15
+////        imageView.image = image
+//      }
 }
