@@ -23,9 +23,9 @@ class CollectionViewCell: UICollectionViewCell {
     func configure(model: IconLabelModel) {
         self.bgView.backgroundColor = model.color
         self.cellImageView.image = UIImage(systemName:model.image)
+        self.cellLabel.text = model.title
         self.bgView.layer.cornerRadius = self.bgView.frame.height / 2
         cellImageView.tintColor = .white
-        cellLabel.textColor = .red
     }
     
 }

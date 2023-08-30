@@ -14,6 +14,8 @@
 		EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */; };
 		EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA502A98A6110086721F /* ProfileViewController.swift */; };
 		EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1FFA522A98A92F0086721F /* TabBar.storyboard */; };
+		EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */; };
+		EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */; };
 		EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */; };
 		EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC829E782A9DE225005A498A /* CollectionViewCell.swift */; };
 		EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B9492A973FF1007052B5 /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 		EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		EC1FFA502A98A6110086721F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC1FFA522A98A92F0086721F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconsCollectionViewCell.xib; sourceTree = "<group>"; };
 		EC829E782A9DE225005A498A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EC86B9462A973FF1007052B5 /* Global Smart HomePage Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Smart HomePage Design.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +62,6 @@
 		99614A6D2A98DA1B0080B09F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				99614A722A99C9050080B09F /* MyCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -69,8 +72,8 @@
 				EC86B94F2A973FF1007052B5 /* Main.storyboard */,
 				EC1FFA522A98A92F0086721F /* TabBar.storyboard */,
 				EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */,
+				EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */,
 				EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */,
-				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +113,9 @@
 				99614A6D2A98DA1B0080B09F /* Model */,
 				99614A6E2A98DA260080B09F /* View */,
 				99614A6F2A98DA310080B09F /* Controller */,
+				99614A722A99C9050080B09F /* MyCollectionViewCell.swift */,
+				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
+				EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */,
 				EC86B9492A973FF1007052B5 /* AppDelegate.swift */,
 				EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */,
 				EC86B9522A973FF2007052B5 /* Assets.xcassets */,
@@ -177,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC86B9562A973FF2007052B5 /* LaunchScreen.storyboard in Resources */,
+				EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */,
 				EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */,
 				EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */,
 				EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */,
@@ -196,6 +203,7 @@
 				99614A732A99C9050080B09F /* MyCollectionViewCell.swift in Sources */,
 				EC1FFA4D2A98A5E00086721F /* CardViewController.swift in Sources */,
 				EC86B94E2A973FF1007052B5 /* ViewController.swift in Sources */,
+				EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */,
 				EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */,
 				EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */,
 				EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */,
