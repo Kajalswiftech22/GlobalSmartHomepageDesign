@@ -21,9 +21,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var threeDotView: UIView!
     @IBOutlet weak var lastDaysTransaction: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    
-    
+ 
     let iconLabelList: [IconLabelModel] = [
         IconLabelModel(image: "menubar.dock.rectangle.badge.record", title: "Load to", color: .orange),
         IconLabelModel(image: "creditcard.fill", title: "Merchant", color: .systemMint),

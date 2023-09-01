@@ -24,6 +24,8 @@
 		EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC86B94F2A973FF1007052B5 /* Main.storyboard */; };
 		EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC86B9522A973FF2007052B5 /* Assets.xcassets */; };
 		EC86B9562A973FF2007052B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */; };
+		ECBA9DC42AA1BC4B006F1D25 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */; };
+		ECBA9DC52AA1BC4B006F1D25 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECBA9DC32AA1BC4B006F1D25 /* SecondTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		EC86B9522A973FF2007052B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC86B9552A973FF2007052B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC86B9572A973FF2007052B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		ECBA9DC32AA1BC4B006F1D25 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 				EC86B94F2A973FF1007052B5 /* Main.storyboard */,
 				EC1FFA522A98A92F0086721F /* TabBar.storyboard */,
 				EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */,
+				ECBA9DC32AA1BC4B006F1D25 /* SecondTableViewCell.xib */,
 				EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */,
 				EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */,
 			);
@@ -114,8 +119,9 @@
 				99614A6E2A98DA260080B09F /* View */,
 				99614A6F2A98DA310080B09F /* Controller */,
 				99614A722A99C9050080B09F /* MyCollectionViewCell.swift */,
-				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
 				EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */,
+				ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */,
+				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
 				EC86B9492A973FF1007052B5 /* AppDelegate.swift */,
 				EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */,
 				EC86B9522A973FF2007052B5 /* Assets.xcassets */,
@@ -186,6 +192,7 @@
 				EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */,
 				EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */,
 				EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */,
+				ECBA9DC52AA1BC4B006F1D25 /* SecondTableViewCell.xib in Resources */,
 				EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */,
 				EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */,
 			);
@@ -209,6 +216,7 @@
 				EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */,
 				EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */,
 				EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */,
+				ECBA9DC42AA1BC4B006F1D25 /* SecondTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
