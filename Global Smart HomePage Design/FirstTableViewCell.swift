@@ -40,8 +40,4 @@ class FirstTableViewCell: UITableViewCell {
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
-    
-    func configure(model: IconLabelModels) {
-    
-    }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		99614A712A98E8A80080B09F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614A702A98E8A80080B09F /* TabBarViewController.swift */; };
-		99614A732A99C9050080B09F /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614A722A99C9050080B09F /* MyCollectionViewCell.swift */; };
 		EC1FFA4B2A98A5C70086721F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */; };
 		EC1FFA4D2A98A5E00086721F /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4C2A98A5E00086721F /* CardViewController.swift */; };
 		EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */; };
@@ -30,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		99614A702A98E8A80080B09F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		99614A722A99C9050080B09F /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC1FFA4C2A98A5E00086721F /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				99614A6D2A98DA1B0080B09F /* Model */,
 				99614A6E2A98DA260080B09F /* View */,
 				99614A6F2A98DA310080B09F /* Controller */,
-				99614A722A99C9050080B09F /* MyCollectionViewCell.swift */,
 				EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */,
 				ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */,
 				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
@@ -207,7 +204,6 @@
 			files = (
 				99614A712A98E8A80080B09F /* TabBarViewController.swift in Sources */,
 				EC1FFA4B2A98A5C70086721F /* HomeViewController.swift in Sources */,
-				99614A732A99C9050080B09F /* MyCollectionViewCell.swift in Sources */,
 				EC1FFA4D2A98A5E00086721F /* CardViewController.swift in Sources */,
 				EC86B94E2A973FF1007052B5 /* ViewController.swift in Sources */,
 				EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */,

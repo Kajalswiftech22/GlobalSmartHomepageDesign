@@ -20,7 +20,7 @@ enum CellType {
 }
 
 class CardViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     let iconLabelList: [IconLabelModels] = [
@@ -39,10 +39,9 @@ class CardViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.register(UINib(nibName: "FirstTableViewCell", bundle: nil), forCellReuseIdentifier: "FirstTableViewCell")
         tableView.register(UINib(nibName: "SecondTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondTableViewCell")
-
+        
     }
 }
 extension CardViewController: UITableViewDelegate, UITableViewDataSource {
@@ -55,19 +54,16 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
         
         let item = iconLabelList[indexPath.row]
         switch item.type {
-           case .type1:
-               let cell = tableView.dequeueReusableCell(withIdentifier: "FirstTableViewCell", for: indexPath) as! FirstTableViewCell
-               cell.configure(model: item)
-               return cell
-
-           case .type2:
-               let cell = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as! SecondTableViewCell
-               cell.configure(model: item) 
-               return cell
-           }
+        case .type1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FirstTableViewCell", for: indexPath) as! FirstTableViewCell
+            return cell
+            
+        case .type2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as! SecondTableViewCell
+            cell.configure(model: item)
+            return cell
+        }
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 400
-//
-//    }
 }
+
+
