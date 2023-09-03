@@ -10,18 +10,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="iconsCollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Global_Smart_HomePage_Design" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="124" height="120"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="iconsCollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Global_Smart_HomePage_Design" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="126"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="124" height="120"/>
+                <rect key="frame" x="0.0" y="0.0" width="124" height="126"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kd4-h3-W4f">
                         <rect key="frame" x="0.0" y="0.0" width="124" height="120"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aDw-bW-8bQ">
-                                <rect key="frame" x="8" y="10" width="108" height="99.333333333333329"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aDw-bW-8bQ">
+                                <rect key="frame" x="8" y="16" width="108" height="104"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ji-ch-PwD">
                                         <rect key="frame" x="29" y="0.0" width="50" height="50"/>
@@ -40,9 +40,9 @@
                                             <constraint firstAttribute="bottom" secondItem="vcG-z6-J4E" secondAttribute="bottom" constant="14" id="hMM-t6-r7V"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-4X-SyZ">
-                                        <rect key="frame" x="34.333333333333343" y="62" width="39.666666666666657" height="37.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-4X-SyZ">
+                                        <rect key="frame" x="36.333333333333329" y="58" width="35.333333333333329" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -52,8 +52,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aDw-bW-8bQ" firstAttribute="leading" secondItem="kd4-h3-W4f" secondAttribute="leading" constant="8" id="5bh-Gx-n0g"/>
-                            <constraint firstItem="aDw-bW-8bQ" firstAttribute="top" secondItem="kd4-h3-W4f" secondAttribute="top" constant="10" id="DXT-Ar-u2b"/>
-                            <constraint firstAttribute="bottom" secondItem="aDw-bW-8bQ" secondAttribute="bottom" constant="10.666666666666671" id="Jx0-JX-tcm"/>
+                            <constraint firstItem="aDw-bW-8bQ" firstAttribute="top" secondItem="kd4-h3-W4f" secondAttribute="top" constant="16" id="DXT-Ar-u2b"/>
+                            <constraint firstAttribute="bottom" secondItem="aDw-bW-8bQ" secondAttribute="bottom" id="Jx0-JX-tcm"/>
                             <constraint firstAttribute="trailing" secondItem="aDw-bW-8bQ" secondAttribute="trailing" constant="8" id="jfM-Nu-Xpt"/>
                         </constraints>
                     </view>
@@ -66,13 +66,13 @@
                 <constraint firstItem="kd4-h3-W4f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jDv-01-iDg"/>
                 <constraint firstAttribute="bottom" secondItem="kd4-h3-W4f" secondAttribute="bottom" id="prI-fL-ogb"/>
             </constraints>
-            <size key="customSize" width="124" height="120"/>
+            <size key="customSize" width="124" height="126"/>
             <connections>
                 <outlet property="bgView" destination="3Ji-ch-PwD" id="Ldk-We-cvl"/>
                 <outlet property="cellImageView" destination="vcG-z6-J4E" id="KPU-jx-v3Q"/>
                 <outlet property="cellLabel" destination="Zw1-4X-SyZ" id="diQ-ja-GNM"/>
             </connections>
-            <point key="canvasLocation" x="-80.916030534351137" y="-4.9295774647887329"/>
+            <point key="canvasLocation" x="-80.916030534351137" y="-2.8169014084507045"/>
         </collectionViewCell>
     </objects>
     <resources>

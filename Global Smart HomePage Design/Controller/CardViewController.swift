@@ -11,7 +11,7 @@ struct IconLabelModels {
     var image: String = ""
     var title: String = ""
     var color: UIColor = .clear
-    var type: CellType = .type1
+//    var type: CellType = .type1
 }
 
 enum CellType {
@@ -46,6 +46,11 @@ class CardViewController: UIViewController {
 }
 extension CardViewController: UITableViewDelegate, UITableViewDataSource {
     
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -53,17 +58,32 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let item = iconLabelList[indexPath.row]
-        switch item.type {
-        case .type1:
+        switch indexPath.section {
+        case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "FirstTableViewCell", for: indexPath) as! FirstTableViewCell
             return cell
             
-        case .type2:
+        case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as! SecondTableViewCell
             cell.configure(model: item)
             return cell
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        let firstTableViewCell = "FirstTableViewCell"
+        
+        if firstTableViewCell == "FirstTableViewCell"{
+            return 330
+        }
+        else if firstTableViewCell == "SecondTableViewCell" {
+            return 400
+        }
+        else{
+            return 0
         }
     }
 }
-
-

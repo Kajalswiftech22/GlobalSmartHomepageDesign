@@ -75,8 +75,6 @@
 				EC1FFA522A98A92F0086721F /* TabBar.storyboard */,
 				EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */,
 				ECBA9DC32AA1BC4B006F1D25 /* SecondTableViewCell.xib */,
-				EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */,
-				EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +90,24 @@
 				EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC0112EE2AA486760010DA42 /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */,
+				EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		EC0112EF2AA486930010DA42 /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
+				EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */,
+			);
+			path = "Collection Cell";
 			sourceTree = "<group>";
 		};
 		EC86B93D2A973FF1007052B5 = {
@@ -113,12 +129,12 @@
 		EC86B9482A973FF1007052B5 /* Global Smart HomePage Design */ = {
 			isa = PBXGroup;
 			children = (
+				EC0112EF2AA486930010DA42 /* Collection Cell */,
+				EC0112EE2AA486760010DA42 /* Table Cell */,
 				99614A6D2A98DA1B0080B09F /* Model */,
 				99614A6E2A98DA260080B09F /* View */,
 				99614A6F2A98DA310080B09F /* Controller */,
-				EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */,
 				ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */,
-				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
 				EC86B9492A973FF1007052B5 /* AppDelegate.swift */,
 				EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */,
 				EC86B9522A973FF2007052B5 /* Assets.xcassets */,
