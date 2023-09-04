@@ -11,12 +11,6 @@ struct IconLabelModels {
     var image: String = ""
     var title: String = ""
     var color: UIColor = .clear
-//    var type: CellType = .type1
-}
-
-enum CellType {
-    case type1
-    case type2
 }
 
 class CardViewController: UIViewController {
@@ -37,10 +31,13 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "FirstTableViewCell", bundle: nil), forCellReuseIdentifier: "FirstTableViewCell")
         tableView.register(UINib(nibName: "SecondTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondTableViewCell")
+        tableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
+        tableView.register(UINib(nibName: "BankingServicesTableViewCell", bundle: nil), forCellReuseIdentifier: "BankingServicesTableViewCell")
         
     }
 }
@@ -48,7 +45,7 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,6 +64,16 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as! SecondTableViewCell
             cell.configure(model: item)
             return cell
+            
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
+            return cell
+            
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BankingServicesTableViewCell", for: indexPath) as! BankingServicesTableViewCell
+            cell.configure(model: item)
+            return cell
+            
         default:
             return UITableViewCell()
         }
@@ -74,16 +81,26 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let firstTableViewCell = "FirstTableViewCell"
-        
-        if firstTableViewCell == "FirstTableViewCell"{
-            return 330
-        }
-        else if firstTableViewCell == "SecondTableViewCell" {
-            return 400
-        }
-        else{
+        switch indexPath.section {
+        case 0:
+            if indexPath.row == 0 {
+                return 330
+            }
+        case 1:
+            if indexPath.row == 0 {
+                return 300
+            }
+        case 2:
+            if indexPath.row == 0 {
+                return 200
+            }
+        case 3:
+            if indexPath.row == 0 {
+                return 180
+            }
+        default:
             return 0
         }
+        return 0
     }
 }

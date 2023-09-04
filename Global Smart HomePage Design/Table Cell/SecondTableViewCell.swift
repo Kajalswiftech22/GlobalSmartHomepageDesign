@@ -29,9 +29,6 @@ class SecondTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-//        flowLayout.minimumInteritemSpacing = 10
-//        flowLayout.minimumLineSpacing = 10
-        
         collectionView.register(UINib(nibName: "iconsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "iconsCollectionViewCell")
     }
 

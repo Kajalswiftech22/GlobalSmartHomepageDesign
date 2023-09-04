@@ -13,6 +13,12 @@
 		EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */; };
 		EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA502A98A6110086721F /* ProfileViewController.swift */; };
 		EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1FFA522A98A92F0086721F /* TabBar.storyboard */; };
+		EC4319D22AA58D8000D7E562 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4319D02AA58D8000D7E562 /* ImageTableViewCell.swift */; };
+		EC4319D32AA58D8000D7E562 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4319D12AA58D8000D7E562 /* ImageTableViewCell.xib */; };
+		EC4319D62AA5A85200D7E562 /* BankingServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4319D42AA5A85200D7E562 /* BankingServicesTableViewCell.swift */; };
+		EC4319D72AA5A85200D7E562 /* BankingServicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4319D52AA5A85200D7E562 /* BankingServicesTableViewCell.xib */; };
+		EC4319DA2AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4319D82AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift */; };
+		EC4319DB2AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4319D92AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib */; };
 		EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */; };
 		EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */; };
 		EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */; };
@@ -23,6 +29,8 @@
 		EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC86B94F2A973FF1007052B5 /* Main.storyboard */; };
 		EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC86B9522A973FF2007052B5 /* Assets.xcassets */; };
 		EC86B9562A973FF2007052B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */; };
+		ECB1B8D72AA5D35700B2B9F1 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1B8D52AA5D35700B2B9F1 /* ImageCollectionViewCell.swift */; };
+		ECB1B8D82AA5D35700B2B9F1 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB1B8D62AA5D35700B2B9F1 /* ImageCollectionViewCell.xib */; };
 		ECBA9DC42AA1BC4B006F1D25 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */; };
 		ECBA9DC52AA1BC4B006F1D25 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECBA9DC32AA1BC4B006F1D25 /* SecondTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -34,6 +42,12 @@
 		EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		EC1FFA502A98A6110086721F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC1FFA522A98A92F0086721F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		EC4319D02AA58D8000D7E562 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		EC4319D12AA58D8000D7E562 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		EC4319D42AA5A85200D7E562 /* BankingServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingServicesTableViewCell.swift; sourceTree = "<group>"; };
+		EC4319D52AA5A85200D7E562 /* BankingServicesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankingServicesTableViewCell.xib; sourceTree = "<group>"; };
+		EC4319D82AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingServicesCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC4319D92AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankingServicesCollectionViewCell.xib; sourceTree = "<group>"; };
 		EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -46,6 +60,8 @@
 		EC86B9522A973FF2007052B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC86B9552A973FF2007052B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC86B9572A973FF2007052B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB1B8D52AA5D35700B2B9F1 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECB1B8D62AA5D35700B2B9F1 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 		ECBA9DC32AA1BC4B006F1D25 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +90,6 @@
 				EC86B94F2A973FF1007052B5 /* Main.storyboard */,
 				EC1FFA522A98A92F0086721F /* TabBar.storyboard */,
 				EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */,
-				ECBA9DC32AA1BC4B006F1D25 /* SecondTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +112,12 @@
 			children = (
 				EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */,
 				EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */,
+				ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */,
+				ECBA9DC32AA1BC4B006F1D25 /* SecondTableViewCell.xib */,
+				EC4319D02AA58D8000D7E562 /* ImageTableViewCell.swift */,
+				EC4319D12AA58D8000D7E562 /* ImageTableViewCell.xib */,
+				EC4319D42AA5A85200D7E562 /* BankingServicesTableViewCell.swift */,
+				EC4319D52AA5A85200D7E562 /* BankingServicesTableViewCell.xib */,
 			);
 			path = "Table Cell";
 			sourceTree = "<group>";
@@ -106,6 +127,10 @@
 			children = (
 				EC829E782A9DE225005A498A /* CollectionViewCell.swift */,
 				EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */,
+				EC4319D82AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift */,
+				EC4319D92AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib */,
+				ECB1B8D52AA5D35700B2B9F1 /* ImageCollectionViewCell.swift */,
+				ECB1B8D62AA5D35700B2B9F1 /* ImageCollectionViewCell.xib */,
 			);
 			path = "Collection Cell";
 			sourceTree = "<group>";
@@ -134,7 +159,6 @@
 				99614A6D2A98DA1B0080B09F /* Model */,
 				99614A6E2A98DA260080B09F /* View */,
 				99614A6F2A98DA310080B09F /* Controller */,
-				ECBA9DC22AA1BC4B006F1D25 /* SecondTableViewCell.swift */,
 				EC86B9492A973FF1007052B5 /* AppDelegate.swift */,
 				EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */,
 				EC86B9522A973FF2007052B5 /* Assets.xcassets */,
@@ -202,10 +226,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC86B9562A973FF2007052B5 /* LaunchScreen.storyboard in Resources */,
+				EC4319DB2AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib in Resources */,
+				ECB1B8D82AA5D35700B2B9F1 /* ImageCollectionViewCell.xib in Resources */,
 				EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */,
 				EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */,
 				EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */,
 				ECBA9DC52AA1BC4B006F1D25 /* SecondTableViewCell.xib in Resources */,
+				EC4319D72AA5A85200D7E562 /* BankingServicesTableViewCell.xib in Resources */,
+				EC4319D32AA58D8000D7E562 /* ImageTableViewCell.xib in Resources */,
 				EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */,
 				EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */,
 			);
@@ -219,16 +247,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				99614A712A98E8A80080B09F /* TabBarViewController.swift in Sources */,
+				EC4319DA2AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift in Sources */,
 				EC1FFA4B2A98A5C70086721F /* HomeViewController.swift in Sources */,
 				EC1FFA4D2A98A5E00086721F /* CardViewController.swift in Sources */,
 				EC86B94E2A973FF1007052B5 /* ViewController.swift in Sources */,
 				EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */,
+				ECB1B8D72AA5D35700B2B9F1 /* ImageCollectionViewCell.swift in Sources */,
 				EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */,
 				EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */,
 				EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */,
 				EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */,
+				EC4319D22AA58D8000D7E562 /* ImageTableViewCell.swift in Sources */,
 				EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */,
 				ECBA9DC42AA1BC4B006F1D25 /* SecondTableViewCell.swift in Sources */,
+				EC4319D62AA5A85200D7E562 /* BankingServicesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
