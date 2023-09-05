@@ -91,9 +91,7 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
                 return 300
             }
         case 2:
-            if indexPath.row == 0 {
-                return 200
-            }
+            return 160
         case 3:
             if indexPath.row == 0 {
                 return 180

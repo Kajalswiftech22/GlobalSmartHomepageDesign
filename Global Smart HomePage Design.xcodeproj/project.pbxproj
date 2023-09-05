@@ -19,6 +19,12 @@
 		EC4319D72AA5A85200D7E562 /* BankingServicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4319D52AA5A85200D7E562 /* BankingServicesTableViewCell.xib */; };
 		EC4319DA2AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4319D82AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift */; };
 		EC4319DB2AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4319D92AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib */; };
+		EC59999A2AA6F2D100EA7106 /* LoadToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5999982AA6F2D100EA7106 /* LoadToViewController.swift */; };
+		EC59999B2AA6F2D100EA7106 /* LoadToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5999992AA6F2D100EA7106 /* LoadToViewController.xib */; };
+		EC59999D2AA6F32900EA7106 /* LoadToRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59999C2AA6F32900EA7106 /* LoadToRouter.swift */; };
+		EC59999F2AA6F33E00EA7106 /* LoadToModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59999E2AA6F33E00EA7106 /* LoadToModel.swift */; };
+		EC5999A32AA6F35A00EA7106 /* LoadToInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5999A22AA6F35A00EA7106 /* LoadToInteractor.swift */; };
+		EC5999A52AA6F36600EA7106 /* LoadToPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5999A42AA6F36600EA7106 /* LoadToPresenter.swift */; };
 		EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */; };
 		EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */; };
 		EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */; };
@@ -48,6 +54,12 @@
 		EC4319D52AA5A85200D7E562 /* BankingServicesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankingServicesTableViewCell.xib; sourceTree = "<group>"; };
 		EC4319D82AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC4319D92AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankingServicesCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC5999982AA6F2D100EA7106 /* LoadToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToViewController.swift; sourceTree = "<group>"; };
+		EC5999992AA6F2D100EA7106 /* LoadToViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadToViewController.xib; sourceTree = "<group>"; };
+		EC59999C2AA6F32900EA7106 /* LoadToRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToRouter.swift; sourceTree = "<group>"; };
+		EC59999E2AA6F33E00EA7106 /* LoadToModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToModel.swift; sourceTree = "<group>"; };
+		EC5999A22AA6F35A00EA7106 /* LoadToInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToInteractor.swift; sourceTree = "<group>"; };
+		EC5999A42AA6F36600EA7106 /* LoadToPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToPresenter.swift; sourceTree = "<group>"; };
 		EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -135,6 +147,27 @@
 			path = "Collection Cell";
 			sourceTree = "<group>";
 		};
+		EC5999952AA6F1FB00EA7106 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC5999962AA6F21400EA7106 /* Bill Payment */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC5999962AA6F21400EA7106 /* Bill Payment */ = {
+			isa = PBXGroup;
+			children = (
+				EC5999982AA6F2D100EA7106 /* LoadToViewController.swift */,
+				EC5999992AA6F2D100EA7106 /* LoadToViewController.xib */,
+				EC59999C2AA6F32900EA7106 /* LoadToRouter.swift */,
+				EC59999E2AA6F33E00EA7106 /* LoadToModel.swift */,
+				EC5999A22AA6F35A00EA7106 /* LoadToInteractor.swift */,
+				EC5999A42AA6F36600EA7106 /* LoadToPresenter.swift */,
+			);
+			path = "Bill Payment";
+			sourceTree = "<group>";
+		};
 		EC86B93D2A973FF1007052B5 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +187,7 @@
 		EC86B9482A973FF1007052B5 /* Global Smart HomePage Design */ = {
 			isa = PBXGroup;
 			children = (
+				EC5999952AA6F1FB00EA7106 /* Modules */,
 				EC0112EF2AA486930010DA42 /* Collection Cell */,
 				EC0112EE2AA486760010DA42 /* Table Cell */,
 				99614A6D2A98DA1B0080B09F /* Model */,
@@ -232,6 +266,7 @@
 				EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */,
 				EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */,
 				ECBA9DC52AA1BC4B006F1D25 /* SecondTableViewCell.xib in Resources */,
+				EC59999B2AA6F2D100EA7106 /* LoadToViewController.xib in Resources */,
 				EC4319D72AA5A85200D7E562 /* BankingServicesTableViewCell.xib in Resources */,
 				EC4319D32AA58D8000D7E562 /* ImageTableViewCell.xib in Resources */,
 				EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */,
@@ -247,18 +282,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				99614A712A98E8A80080B09F /* TabBarViewController.swift in Sources */,
+				EC59999D2AA6F32900EA7106 /* LoadToRouter.swift in Sources */,
 				EC4319DA2AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift in Sources */,
+				EC5999A52AA6F36600EA7106 /* LoadToPresenter.swift in Sources */,
 				EC1FFA4B2A98A5C70086721F /* HomeViewController.swift in Sources */,
 				EC1FFA4D2A98A5E00086721F /* CardViewController.swift in Sources */,
 				EC86B94E2A973FF1007052B5 /* ViewController.swift in Sources */,
 				EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */,
 				ECB1B8D72AA5D35700B2B9F1 /* ImageCollectionViewCell.swift in Sources */,
+				EC59999F2AA6F33E00EA7106 /* LoadToModel.swift in Sources */,
+				EC59999A2AA6F2D100EA7106 /* LoadToViewController.swift in Sources */,
 				EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */,
 				EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */,
 				EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */,
 				EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */,
 				EC4319D22AA58D8000D7E562 /* ImageTableViewCell.swift in Sources */,
 				EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */,
+				EC5999A32AA6F35A00EA7106 /* LoadToInteractor.swift in Sources */,
 				ECBA9DC42AA1BC4B006F1D25 /* SecondTableViewCell.swift in Sources */,
 				EC4319D62AA5A85200D7E562 /* BankingServicesTableViewCell.swift in Sources */,
 			);

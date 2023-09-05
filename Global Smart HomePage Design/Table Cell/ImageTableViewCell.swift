@@ -28,14 +28,16 @@ class ImageTableViewCell: UITableViewCell {
     }
     
     @objc func slideToNext() {
-        if currentCellIndex < images.count - 1 {
-            currentCellIndex = currentCellIndex + 1
+            if currentCellIndex < images.count - 1 {
+                currentCellIndex = currentCellIndex + 1
+            }
+            else {
+                currentCellIndex = 0
+            }
+
+            let xOffset = CGFloat(currentCellIndex) * imageCollectionView.frame.width
+                imageCollectionView.setContentOffset(CGPoint(x: xOffset, y: 0), animated: true)
         }
-        else {
-            currentCellIndex = 0
-        }
-        imageCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .right, animated: true)
-    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -57,6 +59,10 @@ extension ImageTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: imageCollectionView.frame.width, height: imageCollectionView.frame.height)
+        let collectionViewWidth = collectionView.frame.width
+        let numberOfItemsPerRow: CGFloat = 1
+        let cellWidth = (collectionViewWidth - (numberOfItemsPerRow) * flowLayout.minimumInteritemSpacing) / numberOfItemsPerRow
+
+        return CGSize(width: cellWidth, height: self.frame.height)
     }
 }

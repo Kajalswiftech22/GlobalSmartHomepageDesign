@@ -12,8 +12,11 @@ class SecondTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+    private var tapGesture: UITapGestureRecognizer!
+    weak var parent:ViewController?
 
+
+    let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     
     let iconLabelList: [IconLabelModel] = [
         IconLabelModel(image: "menubar.dock.rectangle.badge.record", title: "Load to", color: .orange),
@@ -29,7 +32,31 @@ class SecondTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        setupTapGesture()
         collectionView.register(UINib(nibName: "iconsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "iconsCollectionViewCell")
+    }
+    
+    private func setupTapGesture() {
+           tapGesture = UITapGestureRecognizer(target: self, action: #selector(cellTapped))
+           self.addGestureRecognizer(tapGesture)
+       }
+    
+    @objc private func cellTapped() {
+        if let tappedIndexPath = collectionView.indexPathForItem(at: tapGesture.location(in: collectionView)) {
+            if tappedIndexPath.item == 0{
+                print("First cell tapped with label: \(iconLabelList[tappedIndexPath.item].title)")
+                guard let navigationController = parent?.navigationController else {
+                               print("Parent view controller is not embedded in a navigation controller.")
+                               return
+                           }
+   
+                let destinationVC = LoadToViewController()
+                parent?.navigationController!.pushViewController(destinationVC,animated:true)
+            }
+            else {
+                print("Cell tapped with label: \(iconLabelList[tappedIndexPath.item].title)")
+            }
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -65,4 +92,11 @@ extension SecondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
 
         return CGSize(width: cellWidth, height: 100)
     }
-}
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        collectionView.deselectItem(at: indexPath, animated: true)
+//        let storyboard = UIStoryboard(name: "LoadToViewControllerID", bundle: nil)
+//        if let vc = storyboard.instantiateViewController(withIdentifier: "LoadToViewControllerID") as? LoadToViewController {          navigationController?.pushViewController(vc, animated: true)
+//        }
+    }
+
