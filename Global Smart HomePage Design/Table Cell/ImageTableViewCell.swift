@@ -10,6 +10,8 @@ import UIKit
 class ImageTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageCollectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
+
     
     let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
 
@@ -25,6 +27,7 @@ class ImageTableViewCell: UITableViewCell {
         imageCollectionView.register(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCollectionViewCell")
         
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(slideToNext), userInfo: nil, repeats: true)
+        setUpPageControl()
     }
     
     @objc func slideToNext() {
@@ -37,11 +40,19 @@ class ImageTableViewCell: UITableViewCell {
 
             let xOffset = CGFloat(currentCellIndex) * imageCollectionView.frame.width
                 imageCollectionView.setContentOffset(CGPoint(x: xOffset, y: 0), animated: true)
+                pageControl.currentPage = Int(currentCellIndex)
+
         }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    func setUpPageControl(){
+        pageControl.numberOfPages = images.count
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        pageControl.currentPageIndicatorTintColor = UIColor.tintColor
+        pageControl.pageIndicatorTintColor = UIColor.lightGray.withAlphaComponent(0.8)
     }
 }
 

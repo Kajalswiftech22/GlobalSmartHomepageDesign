@@ -9,7 +9,7 @@ import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var pageControl: UIPageControl!
+//    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var cellImageView: UIImageView!{
         didSet{
             cellImageView.layer.cornerRadius = 10

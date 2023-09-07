@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,12 +25,6 @@
                                     <constraint firstAttribute="height" constant="120" id="TW8-VZ-may"/>
                                 </constraints>
                             </imageView>
-                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ifk-oZ-6nI">
-                                <rect key="frame" x="209.33333333333334" y="132" width="115.66666666666666" height="67"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="pageIndicatorTintColor" systemColor="systemPinkColor"/>
-                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </pageControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wK1-UK-Nzq" userLabel="Line View">
                                 <rect key="frame" x="0.0" y="219" width="534" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,10 +36,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DyH-83-IiV" firstAttribute="leading" secondItem="Gkt-sG-4LH" secondAttribute="leading" constant="16" id="08i-rY-G09"/>
-                            <constraint firstItem="wK1-UK-Nzq" firstAttribute="top" secondItem="Ifk-oZ-6nI" secondAttribute="bottom" constant="20" id="3wC-qZ-byd"/>
-                            <constraint firstItem="Ifk-oZ-6nI" firstAttribute="top" secondItem="DyH-83-IiV" secondAttribute="bottom" constant="12" id="GkR-sm-ThZ"/>
                             <constraint firstAttribute="trailing" secondItem="wK1-UK-Nzq" secondAttribute="trailing" id="IpL-9P-U4c"/>
-                            <constraint firstItem="Ifk-oZ-6nI" firstAttribute="centerX" secondItem="Gkt-sG-4LH" secondAttribute="centerX" id="LKQ-zk-Z1o"/>
                             <constraint firstAttribute="trailing" secondItem="DyH-83-IiV" secondAttribute="trailing" constant="16" id="cxA-93-rB3"/>
                             <constraint firstItem="DyH-83-IiV" firstAttribute="top" secondItem="Gkt-sG-4LH" secondAttribute="top" id="mOe-S2-k3i"/>
                             <constraint firstAttribute="bottom" secondItem="wK1-UK-Nzq" secondAttribute="bottom" id="tPV-js-fj5"/>
@@ -66,14 +56,8 @@
             <size key="customSize" width="534" height="220"/>
             <connections>
                 <outlet property="cellImageView" destination="DyH-83-IiV" id="QAu-6a-Zcj"/>
-                <outlet property="pageControl" destination="Ifk-oZ-6nI" id="Hhl-e5-Vf0"/>
             </connections>
             <point key="canvasLocation" x="311.4503816793893" y="-23.239436619718312"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

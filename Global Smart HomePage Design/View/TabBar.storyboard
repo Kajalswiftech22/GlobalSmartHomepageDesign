@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -31,13 +31,14 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Tgs-oi-8OP" secondAttribute="bottom" id="s68-PC-9nW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aQW-hG-gNh"/>
                     <connections>
                         <outlet property="tableView" destination="Tgs-oi-8OP" id="rds-5m-PUw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1579.3893129770993" y="19.718309859154932"/>
+            <point key="canvasLocation" x="2506.1068702290077" y="19.718309859154932"/>
         </scene>
         <!--GlobalSmart+-->
         <scene sceneID="t4K-n2-AtL">
@@ -532,7 +533,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCg-o2-Bcp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270.9923664122139" y="19.718309859154932"/>
+            <point key="canvasLocation" x="3197.709923664122" y="19.718309859154932"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Hlc-xu-lDY">
@@ -547,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ro-TL-zQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2979.3893129770991" y="22.535211267605636"/>
+            <point key="canvasLocation" x="3906.1068702290077" y="22.535211267605636"/>
         </scene>
     </scenes>
     <resources>

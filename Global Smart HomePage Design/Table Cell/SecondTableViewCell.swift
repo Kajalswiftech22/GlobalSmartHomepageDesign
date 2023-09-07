@@ -13,8 +13,9 @@ class SecondTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var tapGesture: UITapGestureRecognizer!
-    weak var parent:ViewController?
+    weak var parent:TabBarViewController?
 
+    var cellselection:(() -> ())?
 
     let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     
@@ -38,14 +39,13 @@ class SecondTableViewCell: UITableViewCell {
     
     private func setupTapGesture() {
            tapGesture = UITapGestureRecognizer(target: self, action: #selector(cellTapped))
-           self.addGestureRecognizer(tapGesture)
+//           self.addGestureRecognizer(tapGesture)
        }
     
     @objc private func cellTapped() {
         if let tappedIndexPath = collectionView.indexPathForItem(at: tapGesture.location(in: collectionView)) {
             if tappedIndexPath.item == 0{
-                print("First cell tapped with label: \(iconLabelList[tappedIndexPath.item].title)")
-                guard let navigationController = parent?.navigationController else {
+                guard (parent?.navigationController) != nil else {
                                print("Parent view controller is not embedded in a navigation controller.")
                                return
                            }
@@ -93,10 +93,9 @@ extension SecondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
         return CGSize(width: cellWidth, height: 100)
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        collectionView.deselectItem(at: indexPath, animated: true)
-//        let storyboard = UIStoryboard(name: "LoadToViewControllerID", bundle: nil)
-//        if let vc = storyboard.instantiateViewController(withIdentifier: "LoadToViewControllerID") as? LoadToViewController {          navigationController?.pushViewController(vc, animated: true)
-//        }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        self.cellselection?()
     }
+}
 

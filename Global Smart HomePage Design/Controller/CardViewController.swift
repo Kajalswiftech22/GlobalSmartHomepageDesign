@@ -63,6 +63,12 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as! SecondTableViewCell
             cell.configure(model: item)
+            cell.cellselection = {[weak self] in
+                let storyboard = UIStoryboard(name: "LoadToViewController", bundle: nil)
+                 let vc = storyboard.instantiateViewController(withIdentifier: "LoadToViewController") as! LoadToViewController
+                self?.navigationController?.pushViewController(vc, animated: true)
+                
+            }
             return cell
             
         case 2:
