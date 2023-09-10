@@ -13,6 +13,14 @@ struct IconLabelModels {
     var color: UIColor = .clear
 }
 
+struct IconModels {
+    var image: String = ""
+    var title: String = ""
+    var description: String = ""
+    var amount: String = ""
+    var status: String = ""
+}
+
 class CardViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -28,6 +36,12 @@ class CardViewController: UIViewController {
         IconLabelModels(image: "beach.umbrella.fill", title: "Insurance", color: .systemCyan)
     ]
     
+    let iconList: [IconModels] = [
+        IconModels(image: "palsnet", title: "ISP Payment"),
+        IconModels(image: "palsnet", title: "ISP Payment"),
+        IconModels(image: "palsnet", title: "ISP Payment"),
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +52,7 @@ class CardViewController: UIViewController {
         tableView.register(UINib(nibName: "SecondTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondTableViewCell")
         tableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
         tableView.register(UINib(nibName: "BankingServicesTableViewCell", bundle: nil), forCellReuseIdentifier: "BankingServicesTableViewCell")
+        tableView.register(UINib(nibName: "DigitalTransactionTableViewCell", bundle: nil), forCellReuseIdentifier: "DigitalTransactionTableViewCell")
         
     }
 }
@@ -45,7 +60,7 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,6 +70,8 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let item = iconLabelList[indexPath.row]
+        let items = iconList[indexPath.row]
+        
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "FirstTableViewCell", for: indexPath) as! FirstTableViewCell
@@ -80,6 +97,11 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
             cell.configure(model: item)
             return cell
             
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DigitalTransactionTableViewCell", for: indexPath) as! DigitalTransactionTableViewCell
+            cell.configure(model: items)
+            return cell
+            
         default:
             return UITableViewCell()
         }
@@ -101,6 +123,10 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
         case 3:
             if indexPath.row == 0 {
                 return 180
+            }
+        case 4:
+            if indexPath.row == 0{
+                return 300
             }
         default:
             return 0

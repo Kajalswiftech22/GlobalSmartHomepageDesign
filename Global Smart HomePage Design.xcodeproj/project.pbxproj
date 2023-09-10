@@ -25,9 +25,13 @@
 		EC59999F2AA6F33E00EA7106 /* LoadToModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59999E2AA6F33E00EA7106 /* LoadToModel.swift */; };
 		EC5999A32AA6F35A00EA7106 /* LoadToInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5999A22AA6F35A00EA7106 /* LoadToInteractor.swift */; };
 		EC5999A52AA6F36600EA7106 /* LoadToPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5999A42AA6F36600EA7106 /* LoadToPresenter.swift */; };
+		EC73FB542AAD8CBD005F678A /* ISPPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73FB522AAD8CBD005F678A /* ISPPaymentTableViewCell.swift */; };
+		EC73FB552AAD8CBD005F678A /* ISPPaymentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC73FB532AAD8CBD005F678A /* ISPPaymentTableViewCell.xib */; };
 		EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */; };
 		EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */; };
 		EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */; };
+		EC7F747F2AAD8276005F94BA /* DigitalTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F747D2AAD8276005F94BA /* DigitalTransactionTableViewCell.swift */; };
+		EC7F74802AAD8276005F94BA /* DigitalTransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7F747E2AAD8276005F94BA /* DigitalTransactionTableViewCell.xib */; };
 		EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC829E782A9DE225005A498A /* CollectionViewCell.swift */; };
 		EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B9492A973FF1007052B5 /* AppDelegate.swift */; };
 		EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86B94B2A973FF1007052B5 /* SceneDelegate.swift */; };
@@ -60,9 +64,13 @@
 		EC59999E2AA6F33E00EA7106 /* LoadToModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToModel.swift; sourceTree = "<group>"; };
 		EC5999A22AA6F35A00EA7106 /* LoadToInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToInteractor.swift; sourceTree = "<group>"; };
 		EC5999A42AA6F36600EA7106 /* LoadToPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToPresenter.swift; sourceTree = "<group>"; };
+		EC73FB522AAD8CBD005F678A /* ISPPaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISPPaymentTableViewCell.swift; sourceTree = "<group>"; };
+		EC73FB532AAD8CBD005F678A /* ISPPaymentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ISPPaymentTableViewCell.xib; sourceTree = "<group>"; };
 		EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconsCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC7F747D2AAD8276005F94BA /* DigitalTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalTransactionTableViewCell.swift; sourceTree = "<group>"; };
+		EC7F747E2AAD8276005F94BA /* DigitalTransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigitalTransactionTableViewCell.xib; sourceTree = "<group>"; };
 		EC829E782A9DE225005A498A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EC86B9462A973FF1007052B5 /* Global Smart HomePage Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Smart HomePage Design.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC86B9492A973FF1007052B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +138,10 @@
 				EC4319D12AA58D8000D7E562 /* ImageTableViewCell.xib */,
 				EC4319D42AA5A85200D7E562 /* BankingServicesTableViewCell.swift */,
 				EC4319D52AA5A85200D7E562 /* BankingServicesTableViewCell.xib */,
+				EC7F747D2AAD8276005F94BA /* DigitalTransactionTableViewCell.swift */,
+				EC7F747E2AAD8276005F94BA /* DigitalTransactionTableViewCell.xib */,
+				EC73FB522AAD8CBD005F678A /* ISPPaymentTableViewCell.swift */,
+				EC73FB532AAD8CBD005F678A /* ISPPaymentTableViewCell.xib */,
 			);
 			path = "Table Cell";
 			sourceTree = "<group>";
@@ -260,9 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC86B9562A973FF2007052B5 /* LaunchScreen.storyboard in Resources */,
+				EC7F74802AAD8276005F94BA /* DigitalTransactionTableViewCell.xib in Resources */,
 				EC4319DB2AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib in Resources */,
 				ECB1B8D82AA5D35700B2B9F1 /* ImageCollectionViewCell.xib in Resources */,
 				EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */,
+				EC73FB552AAD8CBD005F678A /* ISPPaymentTableViewCell.xib in Resources */,
 				EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */,
 				EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */,
 				ECBA9DC52AA1BC4B006F1D25 /* SecondTableViewCell.xib in Resources */,
@@ -283,6 +297,7 @@
 			files = (
 				99614A712A98E8A80080B09F /* TabBarViewController.swift in Sources */,
 				EC59999D2AA6F32900EA7106 /* LoadToRouter.swift in Sources */,
+				EC7F747F2AAD8276005F94BA /* DigitalTransactionTableViewCell.swift in Sources */,
 				EC4319DA2AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift in Sources */,
 				EC5999A52AA6F36600EA7106 /* LoadToPresenter.swift in Sources */,
 				EC1FFA4B2A98A5C70086721F /* HomeViewController.swift in Sources */,
@@ -301,6 +316,7 @@
 				EC5999A32AA6F35A00EA7106 /* LoadToInteractor.swift in Sources */,
 				ECBA9DC42AA1BC4B006F1D25 /* SecondTableViewCell.swift in Sources */,
 				EC4319D62AA5A85200D7E562 /* BankingServicesTableViewCell.swift in Sources */,
+				EC73FB542AAD8CBD005F678A /* ISPPaymentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

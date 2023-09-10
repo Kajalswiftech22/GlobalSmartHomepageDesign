@@ -33,31 +33,31 @@ class SecondTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        setupTapGesture()
+//        setupTapGesture()
         collectionView.register(UINib(nibName: "iconsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "iconsCollectionViewCell")
     }
     
-    private func setupTapGesture() {
-           tapGesture = UITapGestureRecognizer(target: self, action: #selector(cellTapped))
-//           self.addGestureRecognizer(tapGesture)
-       }
-    
-    @objc private func cellTapped() {
-        if let tappedIndexPath = collectionView.indexPathForItem(at: tapGesture.location(in: collectionView)) {
-            if tappedIndexPath.item == 0{
-                guard (parent?.navigationController) != nil else {
-                               print("Parent view controller is not embedded in a navigation controller.")
-                               return
-                           }
-   
-                let destinationVC = LoadToViewController()
-                parent?.navigationController!.pushViewController(destinationVC,animated:true)
-            }
-            else {
-                print("Cell tapped with label: \(iconLabelList[tappedIndexPath.item].title)")
-            }
-        }
-    }
+//    private func setupTapGesture() {
+//           tapGesture = UITapGestureRecognizer(target: self, action: #selector(cellTapped))
+////           self.addGestureRecognizer(tapGesture)
+//       }
+//
+//    @objc private func cellTapped() {
+//        if let tappedIndexPath = collectionView.indexPathForItem(at: tapGesture.location(in: collectionView)) {
+//            if tappedIndexPath.item == 0{
+//                guard (parent?.navigationController) != nil else {
+//                               print("Parent view controller is not embedded in a navigation controller.")
+//                               return
+//                           }
+//
+//                let destinationVC = LoadToViewController()
+//                parent?.navigationController!.pushViewController(destinationVC,animated:true)
+//            }
+//            else {
+//                print("Cell tapped with label: \(iconLabelList[tappedIndexPath.item].title)")
+//            }
+//        }
+//    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
