@@ -15,6 +15,7 @@ struct IconLabelModel {
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var interest: UIView!
     @IBOutlet weak var fundTransferView: UIView!
     @IBOutlet weak var viewStatement: UIView!
@@ -46,6 +47,11 @@ class HomeViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.backgroundColor = .white
+        
+        scrollView.alwaysBounceVertical = false
+        scrollView.alwaysBounceHorizontal = false
+        scrollView.bounces = false
+
         
         collectionView.register(UINib(nibName: "iconsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "iconsCollectionViewCell")
         

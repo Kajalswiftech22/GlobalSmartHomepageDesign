@@ -27,6 +27,7 @@
 		EC5999A52AA6F36600EA7106 /* LoadToPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5999A42AA6F36600EA7106 /* LoadToPresenter.swift */; };
 		EC73FB542AAD8CBD005F678A /* ISPPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73FB522AAD8CBD005F678A /* ISPPaymentTableViewCell.swift */; };
 		EC73FB552AAD8CBD005F678A /* ISPPaymentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC73FB532AAD8CBD005F678A /* ISPPaymentTableViewCell.xib */; };
+		EC73FB572AADC77F005F678A /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73FB562AADC77F005F678A /* QRViewController.swift */; };
 		EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */; };
 		EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */; };
 		EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */; };
@@ -66,6 +67,7 @@
 		EC5999A42AA6F36600EA7106 /* LoadToPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadToPresenter.swift; sourceTree = "<group>"; };
 		EC73FB522AAD8CBD005F678A /* ISPPaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISPPaymentTableViewCell.swift; sourceTree = "<group>"; };
 		EC73FB532AAD8CBD005F678A /* ISPPaymentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ISPPaymentTableViewCell.xib; sourceTree = "<group>"; };
+		EC73FB562AADC77F005F678A /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				EC86B94D2A973FF1007052B5 /* ViewController.swift */,
 				99614A702A98E8A80080B09F /* TabBarViewController.swift */,
+				EC73FB562AADC77F005F678A /* QRViewController.swift */,
 				EC1FFA502A98A6110086721F /* ProfileViewController.swift */,
 				EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */,
 				EC1FFA4C2A98A5E00086721F /* CardViewController.swift */,
@@ -311,6 +314,7 @@
 				EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */,
 				EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */,
 				EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */,
+				EC73FB572AADC77F005F678A /* QRViewController.swift in Sources */,
 				EC4319D22AA58D8000D7E562 /* ImageTableViewCell.swift in Sources */,
 				EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */,
 				EC5999A32AA6F35A00EA7106 /* LoadToInteractor.swift in Sources */,
@@ -465,6 +469,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Global Smart HomePage Design/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) will use it to scan QRCode.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -492,6 +497,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Global Smart HomePage Design/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) will use it to scan QRCode.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

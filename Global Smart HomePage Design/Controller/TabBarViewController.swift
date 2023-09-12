@@ -7,13 +7,40 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {                                                                                                                                                                                        
+class TabBarViewController: UITabBarController {
+    
+    let middleBtn : UIButton = {
+       let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+        btn.setTitle("", for: .normal)
+        btn.backgroundColor = .systemBlue
+        btn.layer.cornerRadius = btn.frame.height/2
+        if let image = UIImage(systemName: "qrcode.viewfinder") {
+               let imageSize = CGSize(width: 28, height: 28) // Adjust the size as needed
+               let scaledImage = image.scaleToSize(imageSize)
+               let tintedImage = scaledImage.withTintColor(.white)
+                    btn.setImage(tintedImage, for: .normal)
+           }
+        return btn
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpTabs()
         self.configureNavigationBar()
+        middleBtn.frame = CGRect(x: Int(self.tabBar.bounds.width)/2 - 30, y: -20, width: 60, height: 60)
+        middleBtn.addTarget(self, action: #selector(customBtnTapped), for: .touchUpInside)
+        self.tabBar.addSubview(middleBtn)
 
+    }
+    
+    @objc private func customBtnTapped() {
+        navigateToQRViewController()
+    }
+    
+    private func navigateToQRViewController() {
+        let qr = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "QRViewController") as! QRViewController
+        self.navigationController?.pushViewController(qr, animated: true)
     }
     
     private func setUpTabs() {
@@ -34,7 +61,11 @@ class TabBarViewController: UITabBarController {
         let profileItem = UITabBarItem(title: "Profile", image: UIImage.init(systemName: "person.crop.circle"), tag: 5)
         profile.tabBarItem = profileItem
         
-        self.viewControllers = [home, card, history, profile]
+        let qr = QRViewController()
+        let qrItem = UITabBarItem(title: "", image: UIImage.init(systemName: "qrcode.viewfinder"), tag: 5)
+        qr.tabBarItem = qrItem
+        
+        self.viewControllers = [home, card, qr, history, profile]
     }
     
      private func  configureNavigationBar() {
@@ -65,4 +96,11 @@ class TabBarViewController: UITabBarController {
 
          navigationItem.rightBarButtonItems = [bellButton, heartButton, searchButton]
      }
+}
+extension UIImage {
+    func scaleToSize(_ size: CGSize) -> UIImage {
+        UIGraphicsImageRenderer(size: size).image { _ in
+            draw(in: CGRect(origin: .zero, size: size))
+        }
+    }
 }
