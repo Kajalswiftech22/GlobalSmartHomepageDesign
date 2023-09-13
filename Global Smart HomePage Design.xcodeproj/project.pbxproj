@@ -14,6 +14,38 @@
 		EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FFA502A98A6110086721F /* ProfileViewController.swift */; };
 		EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1FFA522A98A92F0086721F /* TabBar.storyboard */; };
 		EC2608372AA98D5C001FC719 /* LoadToViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2608362AA98D5C001FC719 /* LoadToViewController.storyboard */; };
+		EC2AC7DF2AB17B070000EB3A /* LoadWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AC7DE2AB17B070000EB3A /* LoadWalletViewController.swift */; };
+		EC2AC7E12AB17B220000EB3A /* MobileTopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AC7E02AB17B220000EB3A /* MobileTopupViewController.swift */; };
+		EC2AC7E32AB17B2F0000EB3A /* DataPackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AC7E22AB17B2F0000EB3A /* DataPackViewController.swift */; };
+		EC2AC7E52AB17B410000EB3A /* LandlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AC7E42AB17B410000EB3A /* LandlineViewController.swift */; };
+		EC2AC7E72AB17B890000EB3A /* LoadWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2AC7E62AB17B890000EB3A /* LoadWallet.storyboard */; };
+		EC2AC7EB2AB17BCC0000EB3A /* MobileTopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2AC7EA2AB17BCC0000EB3A /* MobileTopup.storyboard */; };
+		EC2AC7ED2AB17BE30000EB3A /* DataPack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2AC7EC2AB17BE30000EB3A /* DataPack.storyboard */; };
+		EC2AC7F12AB17C1B0000EB3A /* landline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2AC7F02AB17C1B0000EB3A /* landline.storyboard */; };
+		EC2AC7F42AB17FF00000EB3A /* LoadWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AC7F22AB17FF00000EB3A /* LoadWalletTableViewCell.swift */; };
+		EC2AC7F52AB17FF00000EB3A /* LoadWalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2AC7F32AB17FF00000EB3A /* LoadWalletTableViewCell.xib */; };
+		EC2F2C6C2AB1A42D000A7593 /* TopupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C6A2AB1A42D000A7593 /* TopupTableViewCell.swift */; };
+		EC2F2C6D2AB1A42D000A7593 /* TopupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C6B2AB1A42D000A7593 /* TopupTableViewCell.xib */; };
+		EC2F2C702AB1C5AF000A7593 /* DataPackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C6E2AB1C5AF000A7593 /* DataPackTableViewCell.swift */; };
+		EC2F2C712AB1C5AF000A7593 /* DataPackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C6F2AB1C5AF000A7593 /* DataPackTableViewCell.xib */; };
+		EC2F2C742AB1CCD2000A7593 /* LandlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C722AB1CCD2000A7593 /* LandlineTableViewCell.swift */; };
+		EC2F2C752AB1CCD2000A7593 /* LandlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C732AB1CCD2000A7593 /* LandlineTableViewCell.xib */; };
+		EC2F2C7C2AB1D4CE000A7593 /* InsuranceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C7A2AB1D4CE000A7593 /* InsuranceTableViewCell.swift */; };
+		EC2F2C7D2AB1D4CE000A7593 /* InsuranceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C7B2AB1D4CE000A7593 /* InsuranceTableViewCell.xib */; };
+		EC2F2C802AB1D4E3000A7593 /* UtilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C7E2AB1D4E3000A7593 /* UtilityTableViewCell.swift */; };
+		EC2F2C812AB1D4E3000A7593 /* UtilityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C7F2AB1D4E3000A7593 /* UtilityTableViewCell.xib */; };
+		EC2F2C882AB1D526000A7593 /* TelevisionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C862AB1D526000A7593 /* TelevisionTableViewCell.swift */; };
+		EC2F2C892AB1D526000A7593 /* TelevisionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C872AB1D526000A7593 /* TelevisionTableViewCell.xib */; };
+		EC2F2C8C2AB1D536000A7593 /* InternetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C8A2AB1D536000A7593 /* InternetTableViewCell.swift */; };
+		EC2F2C8D2AB1D536000A7593 /* InternetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C8B2AB1D536000A7593 /* InternetTableViewCell.xib */; };
+		EC2F2C8F2AB1D550000A7593 /* InsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C8E2AB1D550000A7593 /* InsuranceViewController.swift */; };
+		EC2F2C912AB1D55D000A7593 /* UtilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C902AB1D55D000A7593 /* UtilityViewController.swift */; };
+		EC2F2C932AB1D568000A7593 /* TelevisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C922AB1D568000A7593 /* TelevisionViewController.swift */; };
+		EC2F2C952AB1D57E000A7593 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2C942AB1D57E000A7593 /* InternetViewController.swift */; };
+		EC2F2C972AB1D58F000A7593 /* Insurance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C962AB1D58F000A7593 /* Insurance.storyboard */; };
+		EC2F2C992AB1D59B000A7593 /* Utility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C982AB1D59B000A7593 /* Utility.storyboard */; };
+		EC2F2C9B2AB1D5A8000A7593 /* Television.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C9A2AB1D5A8000A7593 /* Television.storyboard */; };
+		EC2F2C9D2AB1D5B4000A7593 /* Internet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2F2C9C2AB1D5B4000A7593 /* Internet.storyboard */; };
 		EC4319D22AA58D8000D7E562 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4319D02AA58D8000D7E562 /* ImageTableViewCell.swift */; };
 		EC4319D32AA58D8000D7E562 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4319D12AA58D8000D7E562 /* ImageTableViewCell.xib */; };
 		EC4319D62AA5A85200D7E562 /* BankingServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4319D42AA5A85200D7E562 /* BankingServicesTableViewCell.swift */; };
@@ -28,6 +60,8 @@
 		EC73FB542AAD8CBD005F678A /* ISPPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73FB522AAD8CBD005F678A /* ISPPaymentTableViewCell.swift */; };
 		EC73FB552AAD8CBD005F678A /* ISPPaymentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC73FB532AAD8CBD005F678A /* ISPPaymentTableViewCell.xib */; };
 		EC73FB572AADC77F005F678A /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73FB562AADC77F005F678A /* QRViewController.swift */; };
+		EC73FB5A2AB06236005F678A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73FB582AB06236005F678A /* LoginViewController.swift */; };
+		EC73FB5D2AB062FE005F678A /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC73FB5C2AB062FE005F678A /* LoginViewController.storyboard */; };
 		EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */; };
 		EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */; };
 		EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */; };
@@ -54,6 +88,38 @@
 		EC1FFA502A98A6110086721F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC1FFA522A98A92F0086721F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		EC2608362AA98D5C001FC719 /* LoadToViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadToViewController.storyboard; sourceTree = "<group>"; };
+		EC2AC7DE2AB17B070000EB3A /* LoadWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadWalletViewController.swift; sourceTree = "<group>"; };
+		EC2AC7E02AB17B220000EB3A /* MobileTopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileTopupViewController.swift; sourceTree = "<group>"; };
+		EC2AC7E22AB17B2F0000EB3A /* DataPackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackViewController.swift; sourceTree = "<group>"; };
+		EC2AC7E42AB17B410000EB3A /* LandlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlineViewController.swift; sourceTree = "<group>"; };
+		EC2AC7E62AB17B890000EB3A /* LoadWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadWallet.storyboard; sourceTree = "<group>"; };
+		EC2AC7EA2AB17BCC0000EB3A /* MobileTopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MobileTopup.storyboard; sourceTree = "<group>"; };
+		EC2AC7EC2AB17BE30000EB3A /* DataPack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataPack.storyboard; sourceTree = "<group>"; };
+		EC2AC7F02AB17C1B0000EB3A /* landline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = landline.storyboard; sourceTree = "<group>"; };
+		EC2AC7F22AB17FF00000EB3A /* LoadWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadWalletTableViewCell.swift; sourceTree = "<group>"; };
+		EC2AC7F32AB17FF00000EB3A /* LoadWalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadWalletTableViewCell.xib; sourceTree = "<group>"; };
+		EC2F2C6A2AB1A42D000A7593 /* TopupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupTableViewCell.swift; sourceTree = "<group>"; };
+		EC2F2C6B2AB1A42D000A7593 /* TopupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopupTableViewCell.xib; sourceTree = "<group>"; };
+		EC2F2C6E2AB1C5AF000A7593 /* DataPackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackTableViewCell.swift; sourceTree = "<group>"; };
+		EC2F2C6F2AB1C5AF000A7593 /* DataPackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPackTableViewCell.xib; sourceTree = "<group>"; };
+		EC2F2C722AB1CCD2000A7593 /* LandlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlineTableViewCell.swift; sourceTree = "<group>"; };
+		EC2F2C732AB1CCD2000A7593 /* LandlineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandlineTableViewCell.xib; sourceTree = "<group>"; };
+		EC2F2C7A2AB1D4CE000A7593 /* InsuranceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceTableViewCell.swift; sourceTree = "<group>"; };
+		EC2F2C7B2AB1D4CE000A7593 /* InsuranceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsuranceTableViewCell.xib; sourceTree = "<group>"; };
+		EC2F2C7E2AB1D4E3000A7593 /* UtilityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTableViewCell.swift; sourceTree = "<group>"; };
+		EC2F2C7F2AB1D4E3000A7593 /* UtilityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UtilityTableViewCell.xib; sourceTree = "<group>"; };
+		EC2F2C862AB1D526000A7593 /* TelevisionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelevisionTableViewCell.swift; sourceTree = "<group>"; };
+		EC2F2C872AB1D526000A7593 /* TelevisionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TelevisionTableViewCell.xib; sourceTree = "<group>"; };
+		EC2F2C8A2AB1D536000A7593 /* InternetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetTableViewCell.swift; sourceTree = "<group>"; };
+		EC2F2C8B2AB1D536000A7593 /* InternetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InternetTableViewCell.xib; sourceTree = "<group>"; };
+		EC2F2C8E2AB1D550000A7593 /* InsuranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewController.swift; sourceTree = "<group>"; };
+		EC2F2C902AB1D55D000A7593 /* UtilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityViewController.swift; sourceTree = "<group>"; };
+		EC2F2C922AB1D568000A7593 /* TelevisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelevisionViewController.swift; sourceTree = "<group>"; };
+		EC2F2C942AB1D57E000A7593 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		EC2F2C962AB1D58F000A7593 /* Insurance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Insurance.storyboard; sourceTree = "<group>"; };
+		EC2F2C982AB1D59B000A7593 /* Utility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Utility.storyboard; sourceTree = "<group>"; };
+		EC2F2C9A2AB1D5A8000A7593 /* Television.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Television.storyboard; sourceTree = "<group>"; };
+		EC2F2C9C2AB1D5B4000A7593 /* Internet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Internet.storyboard; sourceTree = "<group>"; };
 		EC4319D02AA58D8000D7E562 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		EC4319D12AA58D8000D7E562 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		EC4319D42AA5A85200D7E562 /* BankingServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingServicesTableViewCell.swift; sourceTree = "<group>"; };
@@ -68,6 +134,8 @@
 		EC73FB522AAD8CBD005F678A /* ISPPaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISPPaymentTableViewCell.swift; sourceTree = "<group>"; };
 		EC73FB532AAD8CBD005F678A /* ISPPaymentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ISPPaymentTableViewCell.xib; sourceTree = "<group>"; };
 		EC73FB562AADC77F005F678A /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		EC73FB582AB06236005F678A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC73FB5C2AB062FE005F678A /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		EC7BDBDC2A9F1F9000FFD485 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		EC7BDBDD2A9F1F9000FFD485 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		EC7DF80C2A9DD23B00D8D26B /* iconsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -111,6 +179,7 @@
 			children = (
 				EC86B94F2A973FF1007052B5 /* Main.storyboard */,
 				EC1FFA522A98A92F0086721F /* TabBar.storyboard */,
+				EC73FB5C2AB062FE005F678A /* LoginViewController.storyboard */,
 				EC86B9542A973FF2007052B5 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -120,12 +189,10 @@
 			isa = PBXGroup;
 			children = (
 				EC86B94D2A973FF1007052B5 /* ViewController.swift */,
+				EC73FB582AB06236005F678A /* LoginViewController.swift */,
 				99614A702A98E8A80080B09F /* TabBarViewController.swift */,
-				EC73FB562AADC77F005F678A /* QRViewController.swift */,
-				EC1FFA502A98A6110086721F /* ProfileViewController.swift */,
-				EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */,
-				EC1FFA4C2A98A5E00086721F /* CardViewController.swift */,
-				EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */,
+				EC2AC7DD2AB17AC60000EB3A /* Bill Payment Cells */,
+				EC2AC7DC2AB179DB0000EB3A /* TabBar Controller */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +227,121 @@
 				ECB1B8D62AA5D35700B2B9F1 /* ImageCollectionViewCell.xib */,
 			);
 			path = "Collection Cell";
+			sourceTree = "<group>";
+		};
+		EC2AC7DC2AB179DB0000EB3A /* TabBar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC1FFA4A2A98A5C70086721F /* HomeViewController.swift */,
+				EC1FFA4C2A98A5E00086721F /* CardViewController.swift */,
+				EC73FB562AADC77F005F678A /* QRViewController.swift */,
+				EC1FFA4E2A98A5F80086721F /* HistoryViewController.swift */,
+				EC1FFA502A98A6110086721F /* ProfileViewController.swift */,
+			);
+			path = "TabBar Controller";
+			sourceTree = "<group>";
+		};
+		EC2AC7DD2AB17AC60000EB3A /* Bill Payment Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC2AC7E82AB17B9A0000EB3A /* Load Wallet */,
+				EC2AC7E92AB17BAA0000EB3A /* Mobile Topup */,
+				EC2AC7EE2AB17BE90000EB3A /* Data Pack */,
+				EC2AC7EF2AB17BF30000EB3A /* Landline */,
+				EC2F2C762AB1D155000A7593 /* Insurance */,
+				EC2F2C772AB1D15F000A7593 /* Utility */,
+				EC2F2C782AB1D168000A7593 /* Television */,
+				EC2F2C792AB1D17F000A7593 /* Internet */,
+			);
+			path = "Bill Payment Cells";
+			sourceTree = "<group>";
+		};
+		EC2AC7E82AB17B9A0000EB3A /* Load Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				EC2AC7DE2AB17B070000EB3A /* LoadWalletViewController.swift */,
+				EC2AC7E62AB17B890000EB3A /* LoadWallet.storyboard */,
+				EC2AC7F22AB17FF00000EB3A /* LoadWalletTableViewCell.swift */,
+				EC2AC7F32AB17FF00000EB3A /* LoadWalletTableViewCell.xib */,
+			);
+			path = "Load Wallet";
+			sourceTree = "<group>";
+		};
+		EC2AC7E92AB17BAA0000EB3A /* Mobile Topup */ = {
+			isa = PBXGroup;
+			children = (
+				EC2AC7E02AB17B220000EB3A /* MobileTopupViewController.swift */,
+				EC2AC7EA2AB17BCC0000EB3A /* MobileTopup.storyboard */,
+				EC2F2C6A2AB1A42D000A7593 /* TopupTableViewCell.swift */,
+				EC2F2C6B2AB1A42D000A7593 /* TopupTableViewCell.xib */,
+			);
+			path = "Mobile Topup";
+			sourceTree = "<group>";
+		};
+		EC2AC7EE2AB17BE90000EB3A /* Data Pack */ = {
+			isa = PBXGroup;
+			children = (
+				EC2AC7E22AB17B2F0000EB3A /* DataPackViewController.swift */,
+				EC2AC7EC2AB17BE30000EB3A /* DataPack.storyboard */,
+				EC2F2C6E2AB1C5AF000A7593 /* DataPackTableViewCell.swift */,
+				EC2F2C6F2AB1C5AF000A7593 /* DataPackTableViewCell.xib */,
+			);
+			path = "Data Pack";
+			sourceTree = "<group>";
+		};
+		EC2AC7EF2AB17BF30000EB3A /* Landline */ = {
+			isa = PBXGroup;
+			children = (
+				EC2AC7E42AB17B410000EB3A /* LandlineViewController.swift */,
+				EC2AC7F02AB17C1B0000EB3A /* landline.storyboard */,
+				EC2F2C722AB1CCD2000A7593 /* LandlineTableViewCell.swift */,
+				EC2F2C732AB1CCD2000A7593 /* LandlineTableViewCell.xib */,
+			);
+			path = Landline;
+			sourceTree = "<group>";
+		};
+		EC2F2C762AB1D155000A7593 /* Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				EC2F2C8E2AB1D550000A7593 /* InsuranceViewController.swift */,
+				EC2F2C962AB1D58F000A7593 /* Insurance.storyboard */,
+				EC2F2C7A2AB1D4CE000A7593 /* InsuranceTableViewCell.swift */,
+				EC2F2C7B2AB1D4CE000A7593 /* InsuranceTableViewCell.xib */,
+			);
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		EC2F2C772AB1D15F000A7593 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EC2F2C902AB1D55D000A7593 /* UtilityViewController.swift */,
+				EC2F2C982AB1D59B000A7593 /* Utility.storyboard */,
+				EC2F2C7E2AB1D4E3000A7593 /* UtilityTableViewCell.swift */,
+				EC2F2C7F2AB1D4E3000A7593 /* UtilityTableViewCell.xib */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EC2F2C782AB1D168000A7593 /* Television */ = {
+			isa = PBXGroup;
+			children = (
+				EC2F2C922AB1D568000A7593 /* TelevisionViewController.swift */,
+				EC2F2C9A2AB1D5A8000A7593 /* Television.storyboard */,
+				EC2F2C862AB1D526000A7593 /* TelevisionTableViewCell.swift */,
+				EC2F2C872AB1D526000A7593 /* TelevisionTableViewCell.xib */,
+			);
+			path = Television;
+			sourceTree = "<group>";
+		};
+		EC2F2C792AB1D17F000A7593 /* Internet */ = {
+			isa = PBXGroup;
+			children = (
+				EC2F2C942AB1D57E000A7593 /* InternetViewController.swift */,
+				EC2F2C9C2AB1D5B4000A7593 /* Internet.storyboard */,
+				EC2F2C8A2AB1D536000A7593 /* InternetTableViewCell.swift */,
+				EC2F2C8B2AB1D536000A7593 /* InternetTableViewCell.xib */,
+			);
+			path = Internet;
 			sourceTree = "<group>";
 		};
 		EC5999952AA6F1FB00EA7106 /* Modules */ = {
@@ -276,17 +458,34 @@
 			files = (
 				EC86B9562A973FF2007052B5 /* LaunchScreen.storyboard in Resources */,
 				EC7F74802AAD8276005F94BA /* DigitalTransactionTableViewCell.xib in Resources */,
+				EC2F2C812AB1D4E3000A7593 /* UtilityTableViewCell.xib in Resources */,
+				EC2F2C972AB1D58F000A7593 /* Insurance.storyboard in Resources */,
+				EC2F2C992AB1D59B000A7593 /* Utility.storyboard in Resources */,
 				EC4319DB2AA5B99500D7E562 /* BankingServicesCollectionViewCell.xib in Resources */,
+				EC2F2C9D2AB1D5B4000A7593 /* Internet.storyboard in Resources */,
+				EC2F2C6D2AB1A42D000A7593 /* TopupTableViewCell.xib in Resources */,
 				ECB1B8D82AA5D35700B2B9F1 /* ImageCollectionViewCell.xib in Resources */,
 				EC7BDBDF2A9F1F9000FFD485 /* FirstTableViewCell.xib in Resources */,
+				EC2AC7E72AB17B890000EB3A /* LoadWallet.storyboard in Resources */,
 				EC73FB552AAD8CBD005F678A /* ISPPaymentTableViewCell.xib in Resources */,
 				EC1FFA532A98A92F0086721F /* TabBar.storyboard in Resources */,
 				EC86B9532A973FF2007052B5 /* Assets.xcassets in Resources */,
+				EC2AC7ED2AB17BE30000EB3A /* DataPack.storyboard in Resources */,
+				EC2F2C752AB1CCD2000A7593 /* LandlineTableViewCell.xib in Resources */,
+				EC2F2C8D2AB1D536000A7593 /* InternetTableViewCell.xib in Resources */,
 				ECBA9DC52AA1BC4B006F1D25 /* SecondTableViewCell.xib in Resources */,
 				EC4319D72AA5A85200D7E562 /* BankingServicesTableViewCell.xib in Resources */,
+				EC2F2C9B2AB1D5A8000A7593 /* Television.storyboard in Resources */,
 				EC2608372AA98D5C001FC719 /* LoadToViewController.storyboard in Resources */,
+				EC2AC7F12AB17C1B0000EB3A /* landline.storyboard in Resources */,
+				EC2F2C892AB1D526000A7593 /* TelevisionTableViewCell.xib in Resources */,
 				EC4319D32AA58D8000D7E562 /* ImageTableViewCell.xib in Resources */,
+				EC73FB5D2AB062FE005F678A /* LoginViewController.storyboard in Resources */,
+				EC2AC7F52AB17FF00000EB3A /* LoadWalletTableViewCell.xib in Resources */,
+				EC2F2C712AB1C5AF000A7593 /* DataPackTableViewCell.xib in Resources */,
 				EC86B9512A973FF1007052B5 /* Main.storyboard in Resources */,
+				EC2AC7EB2AB17BCC0000EB3A /* MobileTopup.storyboard in Resources */,
+				EC2F2C7D2AB1D4CE000A7593 /* InsuranceTableViewCell.xib in Resources */,
 				EC7DF80E2A9DD23C00D8D26B /* iconsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,29 +497,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2F2C742AB1CCD2000A7593 /* LandlineTableViewCell.swift in Sources */,
 				99614A712A98E8A80080B09F /* TabBarViewController.swift in Sources */,
 				EC59999D2AA6F32900EA7106 /* LoadToRouter.swift in Sources */,
 				EC7F747F2AAD8276005F94BA /* DigitalTransactionTableViewCell.swift in Sources */,
+				EC2F2C702AB1C5AF000A7593 /* DataPackTableViewCell.swift in Sources */,
+				EC2F2C932AB1D568000A7593 /* TelevisionViewController.swift in Sources */,
 				EC4319DA2AA5B99500D7E562 /* BankingServicesCollectionViewCell.swift in Sources */,
 				EC5999A52AA6F36600EA7106 /* LoadToPresenter.swift in Sources */,
 				EC1FFA4B2A98A5C70086721F /* HomeViewController.swift in Sources */,
+				EC2AC7E32AB17B2F0000EB3A /* DataPackViewController.swift in Sources */,
 				EC1FFA4D2A98A5E00086721F /* CardViewController.swift in Sources */,
+				EC2F2C8C2AB1D536000A7593 /* InternetTableViewCell.swift in Sources */,
 				EC86B94E2A973FF1007052B5 /* ViewController.swift in Sources */,
+				EC2F2C882AB1D526000A7593 /* TelevisionTableViewCell.swift in Sources */,
+				EC2AC7E52AB17B410000EB3A /* LandlineViewController.swift in Sources */,
 				EC7BDBDE2A9F1F9000FFD485 /* FirstTableViewCell.swift in Sources */,
 				ECB1B8D72AA5D35700B2B9F1 /* ImageCollectionViewCell.swift in Sources */,
 				EC59999F2AA6F33E00EA7106 /* LoadToModel.swift in Sources */,
+				EC2AC7DF2AB17B070000EB3A /* LoadWalletViewController.swift in Sources */,
+				EC2AC7F42AB17FF00000EB3A /* LoadWalletTableViewCell.swift in Sources */,
 				EC59999A2AA6F2D100EA7106 /* LoadToViewController.swift in Sources */,
+				EC73FB5A2AB06236005F678A /* LoginViewController.swift in Sources */,
 				EC86B94A2A973FF1007052B5 /* AppDelegate.swift in Sources */,
 				EC1FFA4F2A98A5F80086721F /* HistoryViewController.swift in Sources */,
 				EC1FFA512A98A6110086721F /* ProfileViewController.swift in Sources */,
 				EC86B94C2A973FF1007052B5 /* SceneDelegate.swift in Sources */,
 				EC73FB572AADC77F005F678A /* QRViewController.swift in Sources */,
+				EC2F2C802AB1D4E3000A7593 /* UtilityTableViewCell.swift in Sources */,
 				EC4319D22AA58D8000D7E562 /* ImageTableViewCell.swift in Sources */,
+				EC2F2C8F2AB1D550000A7593 /* InsuranceViewController.swift in Sources */,
+				EC2F2C7C2AB1D4CE000A7593 /* InsuranceTableViewCell.swift in Sources */,
 				EC829E792A9DE225005A498A /* CollectionViewCell.swift in Sources */,
 				EC5999A32AA6F35A00EA7106 /* LoadToInteractor.swift in Sources */,
 				ECBA9DC42AA1BC4B006F1D25 /* SecondTableViewCell.swift in Sources */,
+				EC2F2C912AB1D55D000A7593 /* UtilityViewController.swift in Sources */,
 				EC4319D62AA5A85200D7E562 /* BankingServicesTableViewCell.swift in Sources */,
 				EC73FB542AAD8CBD005F678A /* ISPPaymentTableViewCell.swift in Sources */,
+				EC2F2C6C2AB1A42D000A7593 /* TopupTableViewCell.swift in Sources */,
+				EC2AC7E12AB17B220000EB3A /* MobileTopupViewController.swift in Sources */,
+				EC2F2C952AB1D57E000A7593 /* InternetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

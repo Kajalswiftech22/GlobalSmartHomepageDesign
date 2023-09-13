@@ -53,6 +53,7 @@ class CardViewController: UIViewController {
         tableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
         tableView.register(UINib(nibName: "BankingServicesTableViewCell", bundle: nil), forCellReuseIdentifier: "BankingServicesTableViewCell")
         tableView.register(UINib(nibName: "DigitalTransactionTableViewCell", bundle: nil), forCellReuseIdentifier: "DigitalTransactionTableViewCell")
+        tableView.backgroundColor = .yellow
         
     }
 }
@@ -80,11 +81,29 @@ extension CardViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as! SecondTableViewCell
             cell.configure(model: item)
-            cell.cellselection = {[weak self] in
-                let storyboard = UIStoryboard(name: "LoadToViewController", bundle: nil)
-                 let vc = storyboard.instantiateViewController(withIdentifier: "LoadToViewController") as! LoadToViewController
-                self?.navigationController?.pushViewController(vc, animated: true)
+            
+            switch indexPath.row{
+            case 0:
+                    cell.cellselection = {[weak self] in
+                        let storyboard = UIStoryboard(name: "LoadWallet", bundle: nil)
+                        let vc = storyboard.instantiateViewController(withIdentifier: "LoadWalletViewController") as! LoadWalletViewController
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                }
+            case 1:
+                    cell.cellselection = {[weak self] in
+                        let storyboard = UIStoryboard(name: "MobileTopup", bundle: nil)
+                        let vc = storyboard.instantiateViewController(withIdentifier: "MobileTopupViewController") as! MobileTopupViewController
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                }
+            case 2:
+                    cell.cellselection = {[weak self] in
+                        let storyboard = UIStoryboard(name: "DataPack", bundle: nil)
+                        let vc = storyboard.instantiateViewController(withIdentifier: "DataPackViewController") as! DataPackViewController
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                }
                 
+            default:
+                return UITableViewCell()
             }
             return cell
             

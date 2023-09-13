@@ -83,19 +83,28 @@ extension SecondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
         cell.configure(model: iconLabelList[indexPath.row])
         return cell
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewWidth = collectionView.frame.width
         let numberOfItemsPerRow: CGFloat = 4
-
+        
         let cellWidth = (collectionViewWidth - (numberOfItemsPerRow - 1) * flowLayout.minimumInteritemSpacing) / numberOfItemsPerRow
-
+        
         return CGSize(width: cellWidth, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        self.cellselection?()
+                self.cellselection?()
+//
+//        if self.cellselection() == 0 {
+//
+//        }
+//        if indexPath.item == 0 {
+//            let targetViewController = UIStoryboard(name: "LoadWallet", bundle: nil).instantiateViewController(withIdentifier: "LoadWalletViewController") as! LoadWalletViewController
+////            self.navigationController?.pushViewController(targetViewController, animated: true)
+//
+//
+//        }
     }
 }
-
