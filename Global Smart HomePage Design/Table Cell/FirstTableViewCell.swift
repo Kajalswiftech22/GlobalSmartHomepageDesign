@@ -37,7 +37,28 @@ class FirstTableViewCell: UITableViewCell {
             lastDaysTransaction.layer.cornerRadius = 6
         }
     }
-    override class func awakeFromNib() {
+    
+    @IBOutlet weak var eyeImageView: UIImageView!
+    @IBOutlet weak var contentLabel: UILabel!
+    
+    var isContentVisible = true
+    let defaults = UserDefaults.standard
+    
+    override func awakeFromNib() {
         super.awakeFromNib()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(eyeImageTapped))
+               eyeImageView.isUserInteractionEnabled = true
+               eyeImageView.addGestureRecognizer(tapGesture)
+        defaults
+        
     }
+    
+    @objc func eyeImageTapped() {
+        
+           isContentVisible.toggle()
+           contentLabel.text = isContentVisible ? "XXX" : "97597598027"
+
+           eyeImageView.image = isContentVisible ? UIImage(systemName: "eye.fill") : UIImage(systemName: "eye.slash.fill")
+       }
 }

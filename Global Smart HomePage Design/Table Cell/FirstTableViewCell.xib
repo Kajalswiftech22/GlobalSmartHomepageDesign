@@ -369,6 +369,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="contentLabel" destination="aYA-ox-a3o" id="uFg-ka-rCb"/>
+                <outlet property="eyeImageView" destination="sI6-Ey-49b" id="71x-lc-3kM"/>
                 <outlet property="fundTransferView" destination="aXv-UT-Szm" id="QTO-dJ-11X"/>
                 <outlet property="interestRateView" destination="nSH-dY-zvE" id="3g4-54-Epb"/>
                 <outlet property="lastDaysTransaction" destination="vwM-Rw-J8l" id="ZdD-MF-fwC"/>
