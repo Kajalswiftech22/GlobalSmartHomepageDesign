@@ -15,7 +15,7 @@ class SecondTableViewCell: UITableViewCell {
     private var tapGesture: UITapGestureRecognizer!
     weak var parent:TabBarViewController?
 
-    var cellselection:(() -> ())?
+    var cellselection:((Int) -> ())?
 
     let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     
@@ -95,16 +95,6 @@ extension SecondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-                self.cellselection?()
-//
-//        if self.cellselection() == 0 {
-//
-//        }
-//        if indexPath.item == 0 {
-//            let targetViewController = UIStoryboard(name: "LoadWallet", bundle: nil).instantiateViewController(withIdentifier: "LoadWalletViewController") as! LoadWalletViewController
-////            self.navigationController?.pushViewController(targetViewController, animated: true)
-//
-//
-//        }
+        self.cellselection?(indexPath.row)
     }
 }

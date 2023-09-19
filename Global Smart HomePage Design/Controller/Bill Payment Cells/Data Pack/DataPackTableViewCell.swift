@@ -18,7 +18,7 @@ class DataPackTableViewCell: UITableViewCell {
         
         bgView.layer.cornerRadius = bgView.frame.height/2
         dataPackImageView.layer.cornerRadius = dataPackImageView.frame.height/2
-
+        dataPackImageView.contentMode = .scaleToFill
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

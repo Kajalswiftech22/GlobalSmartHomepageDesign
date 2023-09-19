@@ -18,6 +18,7 @@ class LoadWalletTableViewCell: UITableViewCell {
     @IBOutlet weak var loadWalletImageView: UIImageView!{
         didSet{
             loadWalletImageView.layer.cornerRadius = loadWalletImageView.frame.height/2
+            loadWalletImageView.contentMode = .scaleToFill
         }
     }
     

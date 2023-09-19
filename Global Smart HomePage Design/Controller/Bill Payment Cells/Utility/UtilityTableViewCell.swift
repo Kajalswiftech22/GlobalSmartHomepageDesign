@@ -8,16 +8,29 @@
 import UIKit
 
 class UtilityTableViewCell: UITableViewCell {
+    
 
+    @IBOutlet weak var bgView: UIView!
+    
+    @IBOutlet weak var utilityImgaeView: UIImageView!
+    @IBOutlet weak var label: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        bgView.layer.cornerRadius = bgView.frame.height/2
+        utilityImgaeView.layer.cornerRadius = utilityImgaeView.frame.height/2
+        utilityImgaeView.contentMode = .scaleToFill
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+    }
+    
+    func configure(model: UtilityModel) {
+        self.utilityImgaeView.image = UIImage(named: model.image)
+        self.label.text = model.title
     }
     
 }
