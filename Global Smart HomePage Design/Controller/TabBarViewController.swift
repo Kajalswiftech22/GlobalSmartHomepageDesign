@@ -28,7 +28,7 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         self.setUpTabs()
         self.configureNavigationBar()
-        middleBtn.frame = CGRect(x: Int(self.tabBar.bounds.width)/2 - 30, y: -20, width: 60, height: 60)
+        middleBtn.frame = CGRect(x: Int(self.tabBar.bounds.width)/2 - 30, y: -28, width: 60, height: 60)
         middleBtn.addTarget(self, action: #selector(customBtnTapped), for: .touchUpInside)
         self.tabBar.addSubview(middleBtn)
 
